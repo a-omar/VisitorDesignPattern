@@ -20,13 +20,13 @@ namespace visitor
 
         public string OnBat(Bat bat)
         {
-            bat.Health -= 1;
+            bat.Health -= 3;
             return "Bat was attacked! It has " + bat.Health.ToString() + " health points left";
         }
 
         public string OnHound(Hound hound)
         {
-            hound.Health -= 1;
+            hound.Health -= 5;
             return "Hound was attacked! It has " + hound.Health.ToString() + " health points left";
         }
     }
